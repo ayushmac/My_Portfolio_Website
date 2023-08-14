@@ -1,0 +1,36 @@
+.dark-mode footer {
+  border-left: 5px solid #e9dcc9;
+  border-right: 5px solid #e9dcc9;
+  border-top: 5px solid #e9dcc9;
+  background-color: #1c1c1c;
+}
+
+.dark-mode .footer-title {
+  color: #e9dcc9;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+}
+
+.dark-mode .footer-link {
+  text-decoration: none;
+  color: #e9dcc9;
+  text-align: center;
+  font-size: 24px;
+}
+
+.dark-mode .footer-greet {
+  font-family: "VT323", monospace;
+  font-size: 20px;
+  color: #e9dcc9;
+}
+
+.dark-mode .footer-2-container {
+  padding: 10px;
+  width: 100%;
+  color: #e9dcc9;
+  border-top: 5px solid #e9dcc9;
+  border-bottom: 5px solid #e9dcc9;
+  font-family: "VT323", monospace;
+  text-align: center;
+  font-size: 20px;
+}

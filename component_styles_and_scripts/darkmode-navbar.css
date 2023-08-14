@@ -1,0 +1,41 @@
+/* Dark Mode */
+
+.dark-mode .nav-container {
+  background-color: #1c1c1c;
+  border: 5px solid #e9dcc9;
+}
+
+.nav-logo-container {
+  cursor: pointer;
+  color: black;
+  padding: 20px 50px;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+  /* font-family: 'VT323', monospace; */
+}
+
+.dark-mode .nav-logo-link {
+  color: #e9dcc9;
+  text-decoration: none;
+}
+
+.dark-mode .nav-logo-container {
+  /* font-family: 'VT323', monospace; */
+}
+
+.dark-mode .drpdwn-nav-link {
+  color: #e9dcc9;
+  background-color: #1c1c1c;
+  border-bottom: 1px solid #e9dcc9;
+  border-left: 2px solid #e9dcc9;
+  border-right: 2px solid #e9dcc9;
+}
+
+.dark-mode .nav-link {
+  color: #e9dcc9;
+}
+
+.dark-mode #ham-icon span {
+  background: #e9dcc9;
+}

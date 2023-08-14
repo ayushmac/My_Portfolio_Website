@@ -1,0 +1,35 @@
+#about-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  background-color: #f9f6ee;
+  padding: 30px;
+  gap: 30px;
+}
+
+.about-title {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+}
+
+.about-content {
+  font-family: "VT323", monospace;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: justify;
+  hyphens: auto;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
