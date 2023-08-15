@@ -1,0 +1,75 @@
+#edu-container {
+  width: 100%;
+  height: max-content;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: #f9f6ee;
+}
+.edu-title {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+}
+
+.edu-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+}
+
+.edu-card {
+  position: relative;
+  border-left: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  align-items: start;
+  justify-content: center;
+  margin-left: 30px;
+  font-family: "VT323", monospace;
+  font-size: 20px;
+}
+
+.edu-year {
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+  background-color: black;
+  color: white;
+  line-height: 1.6;
+  padding: 10px 10px;
+}
+
+#edu-logo {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  background-color: black;
+  padding: 15px;
+  color: white;
+}
+
+/* mobile devices */
+@media (max-width: 576px) {
+  .edu-content {
+    gap: 0;
+  }
+}
+
+/* small devices  */
+@media (min-width: 576px) and (max-width: 768px) {
+}

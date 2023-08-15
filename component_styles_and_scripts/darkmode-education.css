@@ -1,0 +1,27 @@
+.dark-mode #edu-logo {
+  background-color: #e9dcc9;
+  padding: 15px;
+  color: #1c1c1c;
+}
+
+.dark-mode #edu-container {
+  background-color: #1c1c1c;
+}
+
+.dark-mode .edu-title {
+  color: #e9dcc9;
+}
+
+.dark-mode .edu-card {
+  border-left: 3px solid #e9dcc9;
+  color: #e9dcc9;
+}
+
+.dark-mode .edu-year {
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+  background-color: #e9dcc9;
+  color: #1c1c1c;
+  line-height: 1.6;
+  padding: 10px 10px;
+}

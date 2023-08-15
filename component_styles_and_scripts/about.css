@@ -4,7 +4,9 @@
   width: 100%;
   height: max-content;
   background-color: #f9f6ee;
-  padding: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 100px;
   gap: 30px;
 }
 

@@ -8,6 +8,11 @@
   background-color: #f9f6ee;
 }
 
+.navigation-bar {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+}
 .nav-logo-container {
   cursor: pointer;
   padding: 20px 50px;

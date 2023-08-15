@@ -4,7 +4,7 @@
   background: linear-gradient(-45deg, #1c1c1c, #383838, #1c1c1c, #4f4e4f);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
-  border: 5px solid #e9dcc9;
+  /* border: 5px solid #e9dcc9; */
 }
 .dark-mode .img-container {
   border: 3px solid #e9dcc9;

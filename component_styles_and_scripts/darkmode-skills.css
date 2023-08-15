@@ -1,0 +1,48 @@
+.dark-mode #skills-container {
+  background-color: #1c1c1c;
+}
+
+#disable-range {
+  pointer-events: none;
+  /* opacity: 0.5; */
+}
+
+.dark-mode .range-input {
+  outline: 3px solid grey;
+}
+.dark-mode .skills-title {
+  color: #e9dcc9;
+}
+
+.dark-mode .skills-subtitle {
+  color: #e9dcc9;
+}
+
+/* styling for range*/
+.dark-mode .range-input::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+
+.dark-mode .range-input::-moz-range-track {
+  background: #ccc;
+}
+
+.dark-mode .range-input::-webkit-slider-thumb {
+  background-color: #e9dcc9;
+
+  border: 3px solid black;
+  box-shadow: -407px 0 0 400px black;
+}
+
+.dark-mode .range-input::-moz-range-thumb {
+  background-color: #e9dcc9;
+  border: 1px solid black;
+  box-shadow: -407px 0 0 400px black;
+}
+
+.dark-mode td {
+  font-family: "VT323", monospace;
+  font-size: 20px;
+  padding: 5px;
+  color: #e9dcc9;
+}

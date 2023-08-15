@@ -26,7 +26,12 @@
       rel="stylesheet"
       href="./component_styles_and_scripts/darkmode-about.css"
     />
+    <link rel="stylesheet" href="./component_styles_and_scripts/skills.css" />
+    <link rel="stylesheet" href="./component_styles_and_scripts/darkmode-skills.css" />
+    <link rel="stylesheet" href="./component_styles_and_scripts/education.css">
+    <link rel="stylesheet" href="./component_styles_and_scripts/darkmode-education.css">
     <link rel="stylesheet" href="./component_styles_and_scripts/footer.css" />
+
     <link
       rel="stylesheet"
       href="./component_styles_and_scripts/darkmode-footer.css"
@@ -35,7 +40,8 @@
       rel="stylesheet"
       href="./component_styles_and_scripts/dark-icon.css"
     />
-
+    <!-- animate on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,39 +55,44 @@
   </head>
   <body>
     <div class="container">
-      <nav class="nav-container">
-        <div class="nav-link-container">
-          <a href="#about-container" class="nav-link">About</a>
-          <a href="#" class="nav-link">Qualifications</a>
-        </div>
-        <div class="nav-logo-container">
-          <a class="nav-logo-link" href="#welcome-container">Mr.Mac</a>
-        </div>
-        <div class="nav-link-container">
-          <a href="#" class="nav-link">Projects</a>
-          <a href="#connect-container" class="nav-link">Contact</a>
-        </div>
-        <div class="hamburger-container">
-          <div id="ham-icon">
-            <span></span>
-            <span></span>
-            <span></span>
+      <div data-aos="fade-in"
+      
+      data-aos-easing="ease-in-out" class="navigation-bar">
+        <nav  class="nav-container">
+          <div class="nav-link-container">
+            <a href="#about-container" class="nav-link">About</a>
+            <a href="#edu-container" class="nav-link">Qualifications</a>
           </div>
-        </div>
-      </nav>
-      <nav class="drpdwn-container">
-        <div class="drpdwn-nav-link-container">
-          <a href="#about-container" class="drpdwn-nav-link">About</a>
-          <a href="#" class="drpdwn-nav-link">Qualifications</a>
-          <a href="#" class="drpdwn-nav-link">Projects</a>
-          <a href="#connect-container" class="drpdwn-nav-link">Contact</a>
-        </div>
-      </nav>
+          <div class="nav-logo-container">
+            <a class="nav-logo-link" href="#welcome-container">Mr.Mac</a>
+          </div>
+          <div class="nav-link-container">
+            <a href="#" class="nav-link">Projects</a>
+            <a href="#connect-container" class="nav-link">Contact</a>
+          </div>
+          <div class="hamburger-container">
+            <div id="ham-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+        <nav class="drpdwn-container">
+          <div class="drpdwn-nav-link-container">
+            <a href="#about-container" class="drpdwn-nav-link">About</a>
+            <a href="#edu-container" class="drpdwn-nav-link">Qualifications</a>
+            <a href="#" class="drpdwn-nav-link">Projects</a>
+            <a href="#connect-container" class="drpdwn-nav-link">Contact</a>
+          </div>
+        </nav>
+      </div>
+     
       <div class="dev-container">
         This Website is currently in works... So Stay Tuned !
       </div>
       <!-- welcm section here -->
-      <div id="welcome-container">
+      <div data-aos="zoom-out" data-aos-duration="1000" id="welcome-container">
         <div id="particle-background"></div>
         <div class="welcome-content">
           <div class="img-container"></div>
@@ -123,8 +134,11 @@
       </div>
 
       <div id="about-container">
-        <div class="about-title">About Me</div>
-        <div class="about-content">
+        <div data-aos="fade-up"
+        class="about-title">About Me</div>
+        <div data-aos="fade-in"
+        data-aos-duration="3000"
+        data-aos-mirror="true" class="about-content">
           Passionate about Web development and App development, I bring a
           dynamic and motivated approach to creating impactful digital
           experiences. With a strong foundation in HTML, CSS, JavaScript, and
@@ -141,29 +155,159 @@
         </div>
       </div>
 
-      <!-- <div id="skills-container">
-        <div class="skills-title">About Me</div>
-        <div class="skills-content-container">
-          Passionate about Web development and App development, I bring a
-          dynamic and motivated approach to creating impactful digital
-          experiences. With a strong foundation in HTML, CSS, JavaScript, and
-          Java, I possess the technical skills to craft visually appealing
-          websites and user-friendly mobile applications. Leveraging the power
-          of React, I enjoy building interactive and scalable UI components,
-          allowing for a seamless user experience. Additionally, I am proficient
-          in utilizing Bootstrap to create responsive and modern designs,
-          ensuring that my projects are both aesthetically pleasing and
-          functional. I thrive in collaborative environments, constantly seeking
-          opportunities to expand my knowledge in these frameworks and deliver
-          exceptional results. Let's connect and embark on exciting web and
-          mobile development journeys together.
+      <div id="skills-container">
+        <div class="skills-title" data-aos="fade-up">My SkillSet</div>
+        <div class="skills-subtitle" data-aos="fade-up">I am currently fimiliar with</div>
+        <div class="skills-content-container"  data-aos="fade-right"
+        data-aos-duration="2500"
+        data-aos-mirror="true">
+          <div>
+            <table >
+              <tr>
+                <td><i class="fa-brands fa-square-js"></i></td>
+                <td>
+                  <strong class="text-light">Javascript</strong>
+                </td>
+                <td>
+                  
+
+                  <input id="disable-range" class="range-input" type="range" name="" value="50" />
+                </td>
+                <td>
+                  <strong><span id="html-value" class="value">0</span></strong>
+                </td>
+              </tr>
+              <tr>
+                <td><i class="fa-brands fa-java"></i></td>
+                <td>
+                  
+                  <strong class="text-light">Java</strong>
+                </td>
+                <td>
+                  <input id="disable-range"  class="range-input"  type="range" name="" value="80" />
+                </td>
+                <td>
+                  <strong><span id="html-value" class="value">0</span></strong>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div>
+            <table >
+              <tr>
+                <td>  <i class="fa-brands fa-html5"> </i></td>
+                <td>
+                </i> <strong>HTML</strong>
+                </td>
+                <td>
+                  <input id="disable-range"  class="range-input"  type="range" name="" value="100" />
+                </td>
+                <td>
+                  <strong><span id="html-value" class="value">0</span></strong>
+                </td>
+              </tr>
+              <tr>
+                <td> <i class="fa-brands fa-css3-alt"></i></td>
+                <td>
+                 
+                  <strong class="text-light">CSS</strong>
+                </td>
+                <td>
+                  <input id="disable-range"  class="range-input"  type="range" name="" value="70" />
+                </td>
+                <td>
+                  <strong><span id="html-value" class="value">0</span></strong>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div>
+            <table>
+              <tr>
+                <td><i class="fa-brands fa-bootstrap"></i></td>
+                <td>
+                  
+                  <strong>Bootstrap</strong>
+                </td>
+                <td>
+                  <input id="disable-range"  class="range-input"  type="range" name="" value="15" />
+                </td>
+                <td>
+                  <strong><span id="html-value" class="value">0</span></strong>
+                </td>
+              </tr>
+              <tr>
+                <td> <i class="fa-brands fa-react"></i> </td>
+                <td>
+                 <strong>React.js</strong>
+                </td>
+                <td>
+                  <input id="disable-range"   class="range-input"  type="range" name="" value="15" />
+                </td>
+                <td>
+                  <strong><span id="html-value" class="value">0</span></strong>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
-      </div> -->
+      </div>
+
+      <div id="edu-container">
+        <div class="edu-title" data-aos="fade-up">Qualifications</div>
+        <div class="edu-content"  >
+          <div class="edu-card-container-1">
+            <div class="edu-card" data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out">
+              <i id="edu-logo" class="fa-solid fa-graduation-cap"></i>
+              <div class="edu-year">SSC (2017 - 18)</div>
+              <div class="edu-card-title">St. Aloysius High School, Nallasopara (East)
+              </div>
+              <div class="edu-card-subtitle">Percentage : 79.20%</div>
+            </div>
+            <div class="edu-card" data-aos="fade-in"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+              <i id="edu-logo" class="fa-solid fa-graduation-cap"></i>
+              <div class="edu-year">HSC (2019 - 20)</div>
+              <div class="edu-card-title">St. Stanislaus High School & Junior College, Nallasopara (West)
+              </div>
+              <div class="edu-card-subtitle">Percentage : 66.15%</div>
+            </div>
+          </div>
+          <div class="edu-card-container-2">
+            <div class="edu-card" data-aos="fade-in"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+              <i id="edu-logo" class="fa-solid fa-graduation-cap"></i>
+              <div class="edu-year">Degree (2020 - 23)</div>
+              <div class="edu-card-title">Bhavans College, Andheri (West)
+              </div>
+              <div class="edu-card-subtitle">CGPA : 9.31</div>
+            </div>
+            <div class="edu-card" data-aos="fade-in"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out">
+              <i id="edu-logo" class="fa-solid fa-graduation-cap"></i>
+              <div class="edu-year">Masters Degree (2023 - ?)</div>
+              <div class="edu-card-title">Lovely Professional University, Punjab
+              </div>
+              <div class="edu-card-subtitle">Currently pursuing  </div>
+            </div>
+          </div>
+          
+          
+         
+        </div>
+      </div>
 
       <footer id="connect-container">
         <div class="footer-1-container">
-          <div class="footer-title">Let's Connect</div>
-          <div class="footer-links-container">
+          <div data-aos="fade-up" class="footer-title">Let's Connect</div>
+          <div  data-aos="fade-in"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out" class="footer-links-container">
             <a class="footer-link" href="mailto:ayushmac2002@gmail.com"
               ><i class="fa-solid fa-envelope"></i> Email</a
             ><a
@@ -205,6 +349,7 @@
     <script src="./component_styles_and_scripts/navbar.js"></script>
     <script src="./component_styles_and_scripts/darkmode.js"></script>
     <script src="./component_styles_and_scripts/welcome.js"></script>
+    <script src="./component_styles_and_scripts/skills.js"></script>
 
     <!--jquery for animated hamburger menu-->
     <script
@@ -219,6 +364,12 @@
           $(this).toggleClass("open");
         });
       });
+    </script>
+
+    <!-- javascript for animation on scroll library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
