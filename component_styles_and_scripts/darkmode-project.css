@@ -1,0 +1,17 @@
+.dark-mode #proj-container {
+  background-color: #1c1c1c;
+}
+
+.dark-mode .proj-title {
+  color: #e9dcc9;
+}
+
+.dark-mode .proj-card {
+  color: #e9dcc9;
+  border: 5px double #e9dcc9;
+}
+
+.dark-mode .visit-btn {
+  background-color: #e9dcc9;
+  color: #1c1c1c;
+}

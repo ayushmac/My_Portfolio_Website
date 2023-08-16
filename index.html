@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="./component_styles_and_scripts/skills.css" />
     <link rel="stylesheet" href="./component_styles_and_scripts/darkmode-skills.css" />
     <link rel="stylesheet" href="./component_styles_and_scripts/education.css">
+    <link rel="stylesheet" href="./component_styles_and_scripts/project.css">
+    <link rel="stylesheet" href="./component_styles_and_scripts/darkmode-project.css">
+
     <link rel="stylesheet" href="./component_styles_and_scripts/darkmode-education.css">
     <link rel="stylesheet" href="./component_styles_and_scripts/footer.css" />
 
@@ -55,10 +58,11 @@
   </head>
   <body>
     <div class="container">
-      <div data-aos="fade-in"
-      
-      data-aos-easing="ease-in-out" class="navigation-bar">
-        <nav  class="nav-container">
+      <div 
+      data-aos="fade-down"
+      data-aos-duration="2500" 
+       class="navigation-bar">
+        <nav   class="nav-container">
           <div class="nav-link-container">
             <a href="#about-container" class="nav-link">About</a>
             <a href="#edu-container" class="nav-link">Qualifications</a>
@@ -67,7 +71,7 @@
             <a class="nav-logo-link" href="#welcome-container">Mr.Mac</a>
           </div>
           <div class="nav-link-container">
-            <a href="#" class="nav-link">Projects</a>
+            <a href="#proj-container" class="nav-link">Projects</a>
             <a href="#connect-container" class="nav-link">Contact</a>
           </div>
           <div class="hamburger-container">
@@ -82,22 +86,22 @@
           <div class="drpdwn-nav-link-container">
             <a href="#about-container" class="drpdwn-nav-link">About</a>
             <a href="#edu-container" class="drpdwn-nav-link">Qualifications</a>
-            <a href="#" class="drpdwn-nav-link">Projects</a>
+            <a href="#proj-container" class="drpdwn-nav-link">Projects</a>
             <a href="#connect-container" class="drpdwn-nav-link">Contact</a>
           </div>
         </nav>
       </div>
      
-      <div class="dev-container">
+      <!-- <div class="dev-container">
         This Website is currently in works... So Stay Tuned !
-      </div>
+      </div> -->
       <!-- welcm section here -->
-      <div data-aos="zoom-out" data-aos-duration="1000" id="welcome-container">
+      <div  id="welcome-container">
         <div id="particle-background"></div>
-        <div class="welcome-content">
-          <div class="img-container"></div>
+        <div  class="welcome-content">
+          <div data-aos="zoom-out" data-aos-duration="2000" class="img-container"></div>
 
-          <div class="content-container">
+          <div data-aos="zoom-out" data-aos-duration="2500" class="content-container">
             <div class="content-links">
               <a
                 class="footer-link"
@@ -169,8 +173,6 @@
                   <strong class="text-light">Javascript</strong>
                 </td>
                 <td>
-                  
-
                   <input id="disable-range" class="range-input" type="range" name="" value="50" />
                 </td>
                 <td>
@@ -225,8 +227,7 @@
             <table>
               <tr>
                 <td><i class="fa-brands fa-bootstrap"></i></td>
-                <td>
-                  
+                <td>      
                   <strong>Bootstrap</strong>
                 </td>
                 <td>
@@ -296,9 +297,63 @@
               <div class="edu-card-subtitle">Currently pursuing  </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div id="proj-container">
+        <div class="proj-title" data-aos="fade-up">Projects</div>
+        <div class="proj-content-container">
+          <div class="proj-card" data-aos="zoom-in">
+              <div class="proj-card-content-1">
+                    <div class="card-title">Card Genie (Android App)</div>
+                    <div class="card-tech"><i class="fa-brands fa-android"></i>&nbsp;<i class="fa-brands fa-java"></i></div>
+              </div>
+              <div class="proj-card-content-2">
+                <div class="card-description">
+                  Card Genie: A digital card app for Android. Craft & manage Social Media, Personal, Business & Gaming cards. Share via QR codes. Firebase Realtime Database ensures synced storage, scaling effortlessly. Simplify card management on the go.
+                 
+                  
+                </div>
+                <div class="card-button-container"><a class="visit-btn" href="https://github.com/ayushmac/CardGenieApp-QR-Code-based-business-card-manager" target="_blank"><i
+                  class="fa-sharp fa-solid fa-arrow-up-right-from-square"
+
+                ></i></a></div>
+              </div>
+          </div>
+          <div class="proj-card" data-aos="zoom-in">
+            <div class="proj-card-content-1">
+                  <div class="card-title">Portfolio Website</div>
+                  <div class="card-tech"><i class="fa-brands fa-react"></i>&nbsp;<i class="fa-brands fa-bootstrap"></i></div>
+            </div>
+            <div class="proj-card-content-2">
+              <div class="card-description">
+                Explore my debut portfolio! Discover me, qualifications, & projects in React-Bootstrap. Connect & learn about my skills & experiences. Visit, connect & explore my work. Excited to connect & share! Reach out through the links. Thanks for visiting!
+              </div>
+              <div class="card-button-container"><a class="visit-btn"  href="https://github.com/ayushmac/myportfoliowesbite2" target="_blank"><i
+                class="fa-sharp fa-solid fa-arrow-up-right-from-square"
+
+              ></i></a></div>
+            </div>
+        </div>
+        <div class="proj-card" data-aos="zoom-in">
+          <div class="proj-card-content-1">
+                <div class="card-title">Tuition Management System (Android App)</div>
+                <div class="card-tech"><i class="fa-brands fa-android"></i>&nbsp;<i class="fa-brands fa-java"></i></div>
+          </div>
+          <div class="proj-card-content-2">
+            <div class="card-description">
+              For my BSc CS Sem 5 project, I crafted an Android tuition app via Android Studio & Firebase. This automates student enrollment, attendance, fee management, ensuring real-time sync & secure access. The aim: streamline admin tasks, bolster communication & enhance tuition center efficiency.
+             
+              
+            </div>
+            <div class="card-button-container"><a class="visit-btn" href="https://github.com/ayushmac/TuitionmanagementAndroidApp" target="_blank"><i
+              class="fa-sharp fa-solid fa-arrow-up-right-from-square"
+
+            ></i> </a></div>
+          </div>
+      </div>
           
           
-         
         </div>
       </div>
 

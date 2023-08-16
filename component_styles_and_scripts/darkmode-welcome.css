@@ -26,16 +26,11 @@
 
 .dark-mode .scroll-down-btn {
   color: #e9dcc9;
-  padding: 20px 25px;
-  border-radius: 100px;
 }
 
 .dark-mode .scroll-down-btn:hover {
   color: black;
   background-color: #e9dcc9;
-
-  padding: 20px 25px;
-  border-radius: 100px;
 }
 
 .dark-mode .typewriter {
