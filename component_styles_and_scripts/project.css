@@ -60,7 +60,7 @@
 }
 .proj-card-content-2 {
   position: absolute;
-  overflow: scroll;
+  /* overflow: scroll; */
   top: 0;
   left: -100%;
   width: 100%;
