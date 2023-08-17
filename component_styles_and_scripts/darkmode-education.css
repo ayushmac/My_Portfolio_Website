@@ -6,6 +6,7 @@
 
 .dark-mode #edu-container {
   background-color: #1c1c1c;
+  border-top: 5px solid #e9dcc9;
 }
 
 .dark-mode .edu-title {

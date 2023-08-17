@@ -31,9 +31,11 @@
     <link rel="stylesheet" href="./component_styles_and_scripts/education.css">
     <link rel="stylesheet" href="./component_styles_and_scripts/project.css">
     <link rel="stylesheet" href="./component_styles_and_scripts/darkmode-project.css">
-
+    <link rel="stylesheet" href="./component_styles_and_scripts/contact.css">
+    <link rel="stylesheet" href="./component_styles_and_scripts/darkmode-contact.css">
     <link rel="stylesheet" href="./component_styles_and_scripts/darkmode-education.css">
     <link rel="stylesheet" href="./component_styles_and_scripts/footer.css" />
+    <link rel="stylesheet" href="component_styles_and_scripts/backtotop.css">
 
     <link
       rel="stylesheet"
@@ -72,7 +74,7 @@
           </div>
           <div class="nav-link-container">
             <a href="#proj-container" class="nav-link">Projects</a>
-            <a href="#connect-container" class="nav-link">Contact</a>
+            <a href="#contact-container" class="nav-link">Contact</a>
           </div>
           <div class="hamburger-container">
             <div id="ham-icon">
@@ -87,7 +89,7 @@
             <a href="#about-container" class="drpdwn-nav-link">About</a>
             <a href="#edu-container" class="drpdwn-nav-link">Qualifications</a>
             <a href="#proj-container" class="drpdwn-nav-link">Projects</a>
-            <a href="#connect-container" class="drpdwn-nav-link">Contact</a>
+            <a href="#contact-container" class="drpdwn-nav-link">Contact</a>
           </div>
         </nav>
       </div>
@@ -343,18 +345,25 @@
           <div class="proj-card-content-2">
             <div class="card-description">
               For my BSc CS Sem 5 project, I crafted an Android tuition app via Android Studio & Firebase. This automates student enrollment, attendance, fee management, ensuring real-time sync & secure access. The aim: streamline admin tasks, bolster communication & enhance tuition center efficiency.
-             
-              
             </div>
             <div class="card-button-container"><a class="visit-btn" href="https://github.com/ayushmac/TuitionmanagementAndroidApp" target="_blank"><i
               class="fa-sharp fa-solid fa-arrow-up-right-from-square"
-
             ></i> </a></div>
           </div>
-      </div>
-          
-          
+        </div> 
         </div>
+      </div>
+
+      <div id="contact-container">
+        <div class="contact-title" data-aos="fade-up">Contact Me</div>
+        
+        <form   data-aos="zoom-in"  data-aos-duration="1000"
+        action="https://formspree.io/f/mdoreqdd" method="POST" class="contact-form-container">
+          <input type="text" class="input-box" id="name" name="name" placeholder="Enter Your Name" required>
+          <input type="email" id="email" name="email" class="input-box" placeholder="Enter Your Email" required>
+          <textarea id="message" name="message" class="msg-box" placeholder="Enter Your Message" cols="30" rows="10" required></textarea>
+          <input  class="submit-btn"type="submit" value="submit">
+        </form>
       </div>
 
       <footer id="connect-container">
@@ -389,7 +398,10 @@
         </div>
         <div class="footer-2-container">Copyright © Ayush 2023</div>
       </footer>
+      <!-- dark mode switcher -->
       <div
+      data-aos="fade-right"
+      data-aos-duration="2500" 
         class="dark-icon-floater"
         id="darkModeToggle"
         title="Change to light mode or dark mode"
@@ -398,13 +410,19 @@
         <i class="fas fa-moon"></i>
         <i class="fas fa-sun"></i>
       </div>
+
+      <!-- scroll to top -->
+      <div class="back-to-top-btn" title="Scroll to top"onclick="scrollToTop()"><i class="fa-solid fa-chevron-up"></i></div>
+
     </div>
     <script src="particles.js-master/particles.js"></script>
     <script src="./component_styles_and_scripts/particlesjs.js"></script>
     <script src="./component_styles_and_scripts/navbar.js"></script>
     <script src="./component_styles_and_scripts/darkmode.js"></script>
     <script src="./component_styles_and_scripts/welcome.js"></script>
+    <script src="./component_styles_and_scripts/contact.js"></script>
     <script src="./component_styles_and_scripts/skills.js"></script>
+    <script src="./component_styles_and_scripts/backtotop.js"></script>
 
     <!--jquery for animated hamburger menu-->
     <script
@@ -428,3 +446,4 @@
     </script>
   </body>
 </html>
+

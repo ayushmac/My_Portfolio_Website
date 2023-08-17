@@ -1,0 +1,27 @@
+.dark-mode #contact-container {
+  border-top: 5px solid #e9dcc9;
+  background-color: #1c1c1c;
+}
+
+.dark-mode .contact-title {
+  color: #e9dcc9;
+}
+
+.dark-mode .contact-form-container {
+  border: 5px solid #e9dcc9;
+}
+
+.dark-mode .submit-btn {
+  background-color: #e9dcc9;
+  color: black;
+}
+
+.dark-mode .msg-box {
+  background-color: #e9dcc9;
+  border: 3px solid #e9dcc9;
+}
+
+.dark-mode .input-box {
+  background-color: #e9dcc9;
+  border: 3px solid #e9dcc9;
+}
