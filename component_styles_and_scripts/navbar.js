@@ -20,4 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
+
+  // Add event listener to close dropdown on window scroll
+  window.addEventListener("scroll", function () {
+    const isOpen = hamIcon.classList.contains("open");
+
+    if (isOpen) {
+      // Close the dropdown
+      dropdownContainer.classList.remove("open");
+      hamIcon.classList.remove("open");
+    }
+  });
 });
